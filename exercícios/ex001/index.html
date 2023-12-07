@@ -10,14 +10,24 @@
     <main>
         <p>Olá Mundo!</p>
         <p id="texto"></p>
-        <button onclick="bt()">Clique aqui</button>
+        <button onclick="bt()" id="botão">Clique aqui</button>
     </main>
 
     <!--scripts-->
     <script>
-        let texto = document.getElementById
+        let texto = document.getElementById("texto")
+        let botão = document.getElementById("botão")
+
         function bt () {
-            if ()
+            if (texto.innerText == "") {
+                texto.innerText = "Você clicou!"
+                botão.innerText = "Limpar"
+            }
+
+            else {
+                texto.innerText = ""
+                botão.innerText = "Clique aqui"
+            }
         }
     </script>
 </body>
