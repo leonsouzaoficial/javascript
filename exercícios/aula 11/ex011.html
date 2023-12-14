@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Teste de nacionalidade</h1>
+    <p>Qual seu país? <input type="text" name="txtpaís" id="txtpaís"></p>
+    <p><input type="button" value="Verificar" onclick="verificar()"></p>
+    <p id="resultado"></p>
+
+    <script>
+        var txtpaís = document.querySelector("input#txtpaís")
+        var resultado = document.getElementById("resultado")
+
+        function verificar () {
+            var país = String(txtpaís.value)
+            país = país.toUpperCase()
+            
+            var lista = ["BR", "BRA", "BRASIL", "BRAZIL"]
+            var brasileiro = false;
+
+            if (país != "" && país.length >= 3) {
+                for (var i = 0; i < lista.length; i++) {
+                    if (país == lista[i]) {
+                        brasileiro = true;
+                        break;
+                    }
+                }
+
+                if (brasileiro) {
+                    resultado.innerText = "Você é brasileiro!"
+                }
+
+                else {
+                    resultado.innerText = "Você é estrangeiro!"
+                }
+            }
+
+            else {
+                resultado.innerText = "Preencha o campo primeiro"
+                txtpaís.value = ""
+            }
+        }
+    </script>
+</body>
+</html>
