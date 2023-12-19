@@ -4,20 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <title>Modelo</title>
+    <title>Verificador de idade</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-        <h1>Título</h1>
+        <h1>Verificador de idade</h1>
     </header>
     <main>
         <section>
             <div>
-                <p>Teste</p>
+                <p><label for="ano"><strong>Ano de nascimento</strong></label></p>
+                <p><input type="number" id="ano" name="ano"></p>
+
+                <p><strong>Gênero</strong></p>
+                <p><input checked type="radio" name="gênero" id="gênero_masculino"><label for="gênero_masculino"> Masculino</label></p>
+                
+                
+                <p><input type="radio" id="gênero_feminino" name="gênero"><label for="gênero_feminino"> Feminino</label></p>
+
+                <p><input type="radio" id="gênero_outro" name="gênero"><label for="gênero_outro"> Outro</label></p>
+
+                <p><input onclick="verificar()" type="button" value="Verificar"></p>
             </div>
-            <div>
-                <p>Teste</p>
+            <div id="resultado">
+                <p>Preencha os dados acima para ver o resultado!</p>
             </div>
         </section>
     </main>
