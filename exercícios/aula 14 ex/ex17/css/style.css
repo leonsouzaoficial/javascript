@@ -25,11 +25,51 @@ main {
 
 main > section {
     background-color: white;
-    min-width: 300px;
-    max-width: 500px;
+    width: 300px;
     border-radius: 10px;
     padding: 10px;
     margin: auto;
+}
+
+div#conteúdo > p > label {
+    width: 20%;
+    margin-right: 10px;
+    line-height: 2em;
+}
+
+div#conteúdo > p > input {
+    display: inline-block;
+    width: calc(80% - 20px);
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: right;
+    padding-right: 5px;
+}
+
+div#conteúdo > p > input[type=button] {
+    display: block;
+    width: 60%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 30px;
+    background-color: green;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+}
+
+div#conteúdo > p > input[type=button]:hover {
+    background-color: rgb(1, 88, 1);
+}
+
+div#resultado > select {
+    display: block;
+    width: 100%;
+    border: 1px solid black;
+    padding: 5px;
 }
 
 footer {

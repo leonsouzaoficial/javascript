@@ -9,15 +9,19 @@
 </head>
 <body>
     <header>
-        <h1>Título</h1>
+        <h1>Tabuada</h1>
     </header>
     <main>
         <section>
-            <div>
-                <p>Conteúdo</p>
+            <div id="conteúdo">
+                <p><label for="número">Número</label><input type="number" id="número" name="número"></p>
+
+                <p><input type="button" value="Mostrar" onclick="mostrar()"></p>
             </div>
-            <div>
-                <p>Conteúdo</p>
+            <div id="resultado">
+                <select size="10" name="tabuada" id="tabuada">
+                    <option value="">Digite um número acima</option>
+                </select>
             </div>
         </section>
     </main>
