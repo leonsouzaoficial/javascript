@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Modelo</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Vamos contar</h1>
+    </header>
+    <main>
+        <section>
+            <div id="conteúdo">
+                <p><label for="início">Início</label><input type="number" id="início" name="início"></p>
+
+                <p><label for="fim">Fim</label><input type="number" id="fim" name="fim"></p>
+
+                <p><label for="passo">Passo</label><input type="number" id="passo" name="passo"></p>
+
+                <p><input type="button" onclick="contar()" value="Contar"></p>
+            </div>
+            <div id="resultado">
+                <p id="resultado">Preparando a contagem...</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>2023 Leon Souza &copy;</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
