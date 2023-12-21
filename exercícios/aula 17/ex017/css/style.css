@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(14, 119, 238);
+}
+
+header {
+    text-align: center;
+    color: white;
+}
+
+header > h1 {
+    padding: 20px 0px;
+}
+
+main {
+    padding: 0px 10px 0px 10px;
+}
+
+main > section {
+    background-color: white;
+    width: 300px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: auto;
+}
+
+div#conteúdo > p > label {
+    line-height: 30px;
+}
+
+div#conteúdo > p > input {
+    width: 70%;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: right;
+    padding-right: 5px;
+}
+
+div#conteúdo > p > input[type=button] {
+    width: 26%;
+    height: 23px;
+    background-color: green;
+    border: none;
+    color: white;
+    text-align: center;
+}
+
+div#conteúdo > p > input[type=button]:hover {
+    background-color: rgb(1, 73, 1);
+}
+
+select {
+    width: 100%;
+    margin: 10px 0px;
+    padding: 5px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+div#resultado {
+    margin-top: 10px;
+}
+
+footer {
+    text-align: center;
+    color: white;
+    font-style: italic;
+    padding: 10px 0px;
+}
